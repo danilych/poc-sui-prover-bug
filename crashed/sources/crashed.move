@@ -1,5 +1,5 @@
-/// Module: works
-module crashed::works;
+/// Module: crashed
+module crashed::crashed;
 
 use std::string::String;
 

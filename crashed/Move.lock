@@ -2,14 +2,26 @@
 
 [move]
 version = 3
-manifest_digest = "75BC98AE479F7CD58B980D86585FE44DA1FF9C6087F2A8D25F2FA5B780C01DFE"
-deps_digest = "397E6A9F7A624706DBDFEE056CE88391A15876868FD18A88504DA74EB458D697"
+manifest_digest = "D56C1957F127279E96299A630644ABD215D0979C29DCFD0677832D1DE4AFEA40"
+deps_digest = "CAFAD8A7CF51067FB4358215BECB86BD100DD64E57C2AC8A7AE7D74B688F5965"
 dependencies = [
+  { id = "BluefinSpot", name = "BluefinSpot" },
   { id = "DeepBook", name = "DeepBook" },
+  { id = "IntegerMate", name = "IntegerMate" },
   { id = "MoveStdlib", name = "MoveStdlib" },
   { id = "Sui", name = "Sui" },
   { id = "SuiProver", name = "SuiProver" },
   { id = "SuiSystem", name = "SuiSystem" },
+]
+
+[[move.package]]
+id = "BluefinSpot"
+source = { git = "https://github.com/fireflyprotocol/bluefin-spot-contract-interface.git", rev = "main", subdir = "" }
+
+dependencies = [
+  { id = "IntegerLibrary", name = "IntegerLibrary" },
+  { id = "IntegerMate", name = "IntegerMate" },
+  { id = "Sui", name = "Sui" },
 ]
 
 [[move.package]]
@@ -18,6 +30,22 @@ source = { git = "https://github.com/asymptotic-code/sui.git", rev = "next", sub
 
 dependencies = [
   { id = "MoveStdlib", name = "MoveStdlib" },
+  { id = "Sui", name = "Sui" },
+]
+
+[[move.package]]
+id = "IntegerLibrary"
+source = { git = "https://github.com/fireflyprotocol/integer-library.git", rev = "v1.0.1", subdir = "" }
+
+dependencies = [
+  { id = "Sui", name = "Sui" },
+]
+
+[[move.package]]
+id = "IntegerMate"
+source = { git = "https://github.com/CetusProtocol/integer-mate.git", rev = "sui-v1.2.0", subdir = "sui" }
+
+dependencies = [
   { id = "Sui", name = "Sui" },
 ]
 

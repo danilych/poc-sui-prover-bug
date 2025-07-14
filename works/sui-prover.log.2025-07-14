@@ -1,0 +1,12 @@
+2025-07-14T09:36:08.630903Z DEBUG sui_prover: Sui-Prover CLI version: 0.0.2
+2025-07-14T09:36:11.936769Z  INFO move_prover_boogie_backend::generator: preparing module 0x0::works    
+2025-07-14T09:36:11.936789Z  INFO move_prover_boogie_backend::generator: preparing module 0x0::works_specs    
+2025-07-14T09:36:12.844376Z  INFO move_prover_boogie_backend::boogie_backend::bytecode_translator: generating verification conditions for 202 module(s)    
+2025-07-14T09:36:12.845598Z  INFO move_prover_boogie_backend::boogie_backend::bytecode_translator: 20 verification conditions    
+2025-07-14T09:36:12.845602Z DEBUG move_prover_boogie_backend::generator: writing boogie to `output/works_specs::hello_world_spec.bpl`    
+2025-07-14T09:36:12.845979Z  INFO move_prover_boogie_backend::boogie_backend::boogie_wrapper: running solver    
+2025-07-14T09:36:12.845982Z DEBUG move_prover_boogie_backend::boogie_backend::boogie_wrapper: command line: /opt/homebrew/Cellar/sui-prover/0.3.25/bin/boogie -proverOpt:O:smt.QI.EAGER_THRESHOLD=100 -vcsCores:4 -inferModifies -enhancedErrorMessages:1 -proverOpt:PROVER_PATH=/opt/homebrew/opt/z3/bin/z3 output/works_specs::hello_world_spec.bpl -printModel:1 -proverOpt:O:model_validate=true -proverOpt:O:smt.QI.LAZY_THRESHOLD=100 -printVerifiedProceduresCount:0    
+2025-07-14T09:36:12.845985Z DEBUG move_prover_boogie_backend::boogie_backend::prover_task_runner: running Boogie command with seed 0    
+2025-07-14T09:36:13.360049Z DEBUG move_prover_boogie_backend::boogie_backend::boogie_wrapper: analyzing boogie output    
+2025-07-14T09:36:13.360372Z DEBUG move_prover_boogie_backend::boogie_backend::boogie_wrapper: writing boogie log to output/works_specs::hello_world_spec.bpl.log    
+2025-07-14T09:36:13.363398Z  INFO move_prover_boogie_backend::generator: 0.000s building, 0.915s translation, 0.527s verification    

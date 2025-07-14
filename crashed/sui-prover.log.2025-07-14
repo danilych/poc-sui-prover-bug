@@ -1,0 +1,17 @@
+2025-07-14T09:36:18.600322Z DEBUG sui_prover: Sui-Prover CLI version: 0.0.2
+2025-07-14T09:37:01.801328Z DEBUG sui_prover: Sui-Prover CLI version: 0.0.2
+2025-07-14T09:37:30.220403Z DEBUG sui_prover: Sui-Prover CLI version: 0.0.2
+2025-07-14T09:37:33.123484Z DEBUG sui_prover: Sui-Prover CLI version: 0.0.2
+2025-07-14T09:37:35.802842Z DEBUG sui_prover: Sui-Prover CLI version: 0.0.2
+2025-07-14T09:37:47.349860Z DEBUG sui_prover: Sui-Prover CLI version: 0.0.2
+2025-07-14T09:37:50.486760Z  INFO move_prover_boogie_backend::generator: preparing module 0x0::crashed    
+2025-07-14T09:37:50.487723Z  INFO move_prover_boogie_backend::generator: preparing module 0x0::crashed_specs    
+2025-07-14T09:37:51.576879Z  INFO move_prover_boogie_backend::boogie_backend::bytecode_translator: generating verification conditions for 228 module(s)    
+2025-07-14T09:37:51.578849Z  INFO move_prover_boogie_backend::boogie_backend::bytecode_translator: 20 verification conditions    
+2025-07-14T09:37:51.578855Z DEBUG move_prover_boogie_backend::generator: writing boogie to `output/crashed_specs::hello_world_spec.bpl`    
+2025-07-14T09:37:51.579408Z  INFO move_prover_boogie_backend::boogie_backend::boogie_wrapper: running solver    
+2025-07-14T09:37:51.579412Z DEBUG move_prover_boogie_backend::boogie_backend::boogie_wrapper: command line: /opt/homebrew/Cellar/sui-prover/0.3.25/bin/boogie -enhancedErrorMessages:1 -vcsCores:4 output/crashed_specs::hello_world_spec.bpl -printModel:1 -proverOpt:O:model_validate=true -proverOpt:PROVER_PATH=/opt/homebrew/opt/z3/bin/z3 -printVerifiedProceduresCount:0 -proverOpt:O:smt.QI.LAZY_THRESHOLD=100 -proverOpt:O:smt.QI.EAGER_THRESHOLD=100 -inferModifies    
+2025-07-14T09:37:51.579415Z DEBUG move_prover_boogie_backend::boogie_backend::prover_task_runner: running Boogie command with seed 0    
+2025-07-14T09:37:52.113892Z DEBUG move_prover_boogie_backend::boogie_backend::boogie_wrapper: analyzing boogie output    
+2025-07-14T09:37:52.114420Z DEBUG move_prover_boogie_backend::boogie_backend::boogie_wrapper: writing boogie log to output/crashed_specs::hello_world_spec.bpl.log    
+2025-07-14T09:37:52.117313Z  INFO move_prover_boogie_backend::generator: 0.000s building, 1.077s translation, 0.553s verification    
